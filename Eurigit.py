@@ -10,7 +10,7 @@ Capitals['Taani'] = 'Kopenhaagen'
 Capitals['Malta'] = 'Valletta'
 Capitals['Saksamaa'] = 'Berliin'
 Capitals['Madalmaad'] = 'Amsterdam'
-Capitals['Esti'] = 'Tallinn'
+Capitals['Estonia'] = 'Tallinn'
 Capitals['Austria'] = 'Viin'
 Capitals['Iirimaa'] = 'Dublin'
 Capitals['Poola'] = 'Varssavi'
@@ -34,10 +34,7 @@ for country in Countries:
         print('Riigi pealinn ' + country + ': ' + Capitals[country])
     else:
         print('Nimega riiki andmebaasis pole' + country)
-        print("Kas soovite riigi lisada? kui jah, sisesta 1")
-        if==1:
-            a=input("Sisesta riik")
-            b=input("Sisesta pealinn")
-            dictionary['a'] = 'b'
+        if 1==input("Kas soovite riigi lisada? kui jah, sisesta 1"):
+            dictionary = {input("Sisesta riik"):input("Sisesta pealinn")}
         else:
             print("viga")
