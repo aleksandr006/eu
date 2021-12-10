@@ -10,7 +10,7 @@ Capitals['Taani'] = 'Kopenhaagen'
 Capitals['Malta'] = 'Valletta'
 Capitals['Saksamaa'] = 'Berliin'
 Capitals['Madalmaad'] = 'Amsterdam'
-Capitals['Estonia'] = 'Tallinn'
+Capitals['Esti'] = 'Tallinn'
 Capitals['Austria'] = 'Viin'
 Capitals['Iirimaa'] = 'Dublin'
 Capitals['Poola'] = 'Varssavi'
@@ -28,29 +28,31 @@ Capitals['Küpros'] = 'Nikosia'
 Capitals['Rootsi'] = 'Stockholm'
 Capitals['Läti'] = 'Riga'
 Countries = ['Belgia','Leedu','Bulgaaria','Luksemburg','Tsehhi Vabariik','Ungari','Taani','Malta','Saksamaa','Madalmaad','Esti','Austria','Iirimaa','Poola','Kreeka','Portugal','Hispania','Rumeenia','Prantsustmaa','Slovakkia','Itaalia','Sooma','Küpros','Rootsi','Läti',]
-for country in Countries:
-    country=input("sisesta riik: ")
-    if country in Capitals:
-        print('Riigi pealinn ' + country + ': ' + Capitals[country])
-    else:
-        print('Nimega riiki andmebaasis pole' + country)
-        if 1==input("Kas soovite riigi lisada? kui jah, sisesta 1"):
-            dictionary = {input("Sisesta riik"):input("Sisesta pealinn")}
+Pealinnes = ['Brüssel','Vilnius','Sofia','Luksemburg','Praha','Budapest','Kopenhaagen','Valletta','Berliin','Amsterdam','Tallinn','Viin','Dublin','Varssavi','Ateana','Lissabon','Madrid','Bukarest','Pariis','Ljubljana','Zagreb','Bratislava','Rooma','Helsingi','Nikosia','Stockholm','Riga']
+print("Kas soovite riigi pealinnaga tutvuda? 1 Kas soovite testida oma teadmisi Euroopa riikide kohta? 2")
+if=="1"
+    for country in Countries:
+        country=input("sisesta riik: ")
+        if country in Capitals:
+            print('Riigi pealinn ' + country + ': ' + Capitals[country])
         else:
-            print("viga")
-sõnastik = {}
-riigid=[]
-linnad=[]
-file=open("riigid_pealinnad.txt","r")
-for line in file:
-    k,v=line.strip().split("-")
-    sonastik[k.strip()]=v.strip()
-    riigid.append(k)
-    linnad.append(sonastik)[k.strip8()])
-    file.close()
-    print(sonastik)
-    print("Riigid:")
-    print(riigid)
-    print("Pealinnad:")
-    print(linnad)
-    a=input()
+            print('Nimega riiki andmebaasis pole' + country)
+            c=input("Kas soovite riigi lisada? kui jah, sisesta 1 võib-olla oli kirjaviga, kui selle parandad 2")
+            if c=="1":
+                a=input("Sisesta riik")
+                b=input("Sisesta pealinn")
+                Capitals.update({a: b})
+            elif c=="2":
+                g=input("Sisesta riik:")
+                Capitals.pop(g)
+                q=input("Sisesta riik")
+                w=input("Sisesta pealinn")
+                Capitals.update({q:w})
+elif=="2":
+    for x in range(10):
+        print(chose(Countries))
+
+            else:
+                print("viga")
+else:
+    print("Viga")
