@@ -1,3 +1,8 @@
+from tkinter import*
+root=Tk()
+root.title("")
+root.geometry("1500x1000+100+100")
+root.resizable(width=False, height=False)
 def riik(d:dict, v:int):
     keys_list=(list(d.keys()))
     values_list=(list(d.values()))
@@ -23,4 +28,6 @@ def new_key_value(d:dict):
     capital=(input("Sisestage peallin: ")).capitalize()
     new={riik:capital}
 
-    return d,new                                                                                                                                                                                                        
+    return d,new    
+
+root.mainloop()
